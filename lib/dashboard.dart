@@ -28,6 +28,7 @@ class Dashboard extends StatelessWidget {
           name: name,
           datehours: datehours,
         ),
+        BoxPublication()
       ],
     );
   }
