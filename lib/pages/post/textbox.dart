@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class TextBox extends StatelessWidget {
-  const TextBox({Key? key}) : super(key: key);
+  final String title;
+  const TextBox({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class TextBox extends StatelessWidget {
                 const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
             border: OutlineInputBorder(),
             hintText: 'O que está pensando?',
-            counterText: '',
+            counterText: title,
           ),
         ),
       ),

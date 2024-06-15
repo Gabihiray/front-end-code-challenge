@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:front_end_code_challenge/infoperson/card.dart';
-import 'package:front_end_code_challenge/dashboard.dart';
+import 'package:front_end_code_challenge/pages/infoperson/card.dart';
+import 'package:front_end_code_challenge/pages/dashboard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
         profissional: 'Front-end Developer',
         localitazion: 'São Roque, São Paulo',
         datehours: '1h atrás',
+        title: '',
       ),
     );
   }
@@ -33,12 +34,14 @@ class MyHomePage extends StatefulWidget {
       required this.name,
       required this.profissional,
       required this.localitazion,
-      required this.datehours});
+      required this.datehours,
+      required this.title});
 
   final String name;
   final String profissional;
   final String localitazion;
   final String datehours;
+  final String title;
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -72,6 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
           profissional: widget.profissional,
           localitazion: widget.localitazion,
           datehours: widget.datehours,
+          title: widget.title,
         ));
   }
 }

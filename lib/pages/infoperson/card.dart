@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:front_end_code_challenge/infoperson/avatar.dart';
+import 'package:front_end_code_challenge/pages/infoperson/avatar.dart';
 
 class CardInfo extends StatelessWidget {
   final String name;
@@ -15,10 +15,8 @@ class CardInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 450.0, top: 50),
+      padding: const EdgeInsets.only(top: 50),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
             width: 333,

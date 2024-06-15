@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:front_end_code_challenge/infoperson/buttonedit.dart';
-import 'package:front_end_code_challenge/infoperson/infoperson.dart';
-import 'package:front_end_code_challenge/infoperson/tableinfo.dart';
+import 'package:front_end_code_challenge/pages/infoperson/buttonedit.dart';
+import 'package:front_end_code_challenge/pages/infoperson/infoperson.dart';
+import 'package:front_end_code_challenge/pages/infoperson/tableinfo.dart';
 
 class Avatar extends StatelessWidget {
   final String name;
